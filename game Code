@@ -1,0 +1,57 @@
+import java.util.Scanner;
+import java.util.Random;
+public class Rock_paper_scissor {
+    public static void main(String[] args) {
+
+        Scanner scr = new Scanner(System.in);
+        System.out.println("Enter 0 for Rock\n" + "Enter 1 for  Paper\n" + "Enter 2 for Scissor\n");
+        int UserInput = scr.nextInt();
+        Random random = new Random();
+        int ComputerInput = random.nextInt(3);
+
+        if (UserInput == ComputerInput){
+            System.out.println("Draw");
+        }else if (UserInput ==0 && ComputerInput == 2 || UserInput ==1 && ComputerInput == 0 ||
+                UserInput ==2 && ComputerInput == 1){
+            System.out.println("Computer win You Loose");
+        }else {
+            System.out.println("You Win");
+        }
+
+        if (ComputerInput == 0){
+            System.out.println("computer Choice  = Rock");
+        }else if (ComputerInput == 1){
+            System.out.println("computer Choice  = Paper");
+        }else {
+            System.out.println("computer Choice  = Scissor");
+        }
+
+
+
+
+
+        /*
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 0 for Rock\n" + "Enter 1 for  Paper\n" + "Enter 2 for Scissor");
+
+        int User = sc.nextInt();
+        Random random =new Random();
+        int Computer = random.nextInt(3);
+
+        if (User == Computer){
+            System.out.println("Draw");
+        }else if (User == 0 && Computer == 1 || User == 0 && Computer == 2 || User == 1 && Computer == 2){
+            System.out.println("BUnnu Win");
+        }else {
+            System.out.println("Torpedo win");
+        }
+
+         */
+
+
+    }
+
+
+}
